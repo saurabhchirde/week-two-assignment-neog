@@ -3,6 +3,11 @@
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+:root {
+  --primary-color: #6201ee;
+  --secondary-color: #e7d9fe;
+  --text-white: white;
+}
 header {
   text-align: center;
   margin: 1.5rem auto;
@@ -25,12 +30,12 @@ button {
   border-radius: 20px;
   border: 1px solid gray;
   background-color: rgb(21, 103, 255);
-  color: white;
+  color: var(--text-white);
   box-shadow: 0 5px 5px rgb(192, 192, 192);
   cursor: pointer;
 }
 nav a {
-  color: white;
+  color: var(--text-white);
 }
 a {
   text-decoration: none;
@@ -65,7 +70,7 @@ a {
   padding: 0.6rem 1rem;
 }
 .drawerActive {
-  background-color: #e7d9fe;
+  background-color: var(--secondary-color);
   border-radius: 2px;
 }
 .drawerHover:hover {
@@ -74,4 +79,32 @@ a {
 }
 .drawerItems span {
   margin-left: 2rem;
+}
+
+/* Header */
+
+.headerContainer {
+  max-width: 950px;
+  height: 50px;
+  background-color: var(--primary-color);
+  color: var(--text-white);
+  margin: 6rem auto;
+  display: flex;
+  align-items: center;
+}
+.headerHamburger {
+  margin: 1.3rem;
+  margin-right: 2rem;
+}
+.headerTitle {
+  font-size: 0.9rem;
+  flex: 1;
+}
+.headerIcons {
+  width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1rem;
+  margin: 0.2rem;
 }
