@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  text-align: center;
+  margin: 1.5rem auto;
+}
+nav {
+  max-width: 950px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: rgb(255, 255, 255);
+  height: 80px;
+  box-shadow: 0 5px 5px rgb(192, 192, 192);
+}
+
+button {
+  font-size: 1rem;
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 1px solid gray;
+  background-color: rgb(21, 103, 255);
+  color: white;
+  box-shadow: 0 5px 5px rgb(192, 192, 192);
+  cursor: pointer;
+}
+nav a {
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+
+/* drawer */
+.drawerContainer {
+  margin: 5rem auto;
+  width: 230px;
+  height: 245px;
+  box-shadow: 0 0 20px rgb(211, 211, 211);
+}
+.drawerTitle {
+  padding: 1rem 0.6rem 0.1rem;
+  margin-left: 1rem;
+  color: rgb(31, 31, 31);
+}
+.drawerTitle small {
+  color: rgb(58, 58, 58);
+}
+.drawerItems {
+  color: black;
+  margin: 1.2rem 0.5;
+}
+.drawerItems a {
+  color: rgb(58, 58, 58);
+}
+.drawerItems div {
+  margin: 0.5rem 0.5rem;
+  display: block;
+  border-radius: 2px;
+  padding: 0.6rem 1rem;
+}
+.drawerActive {
+  background-color: #e7d9fe;
+  border-radius: 2px;
+}
+.drawerHover:hover {
+  background-color: #eeeeee;
+  border-radius: 2px;
+}
+.drawerItems span {
+  margin-left: 2rem;
+}
