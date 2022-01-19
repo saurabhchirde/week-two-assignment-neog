@@ -5,35 +5,44 @@
 }
 :root {
   --primary-color: #6201ee;
+  --primary-text-color: #9980bb;
   --secondary-color: #e7d9fe;
   --text-white: white;
+  --text-light-gray: rgb(231, 231, 231);
+  --snackbar: #333333;
 }
-header {
-  text-align: center;
-  margin: 1.5rem auto;
+body {
+  background-color: rgb(212, 212, 212);
 }
-nav {
-  max-width: 950px;
+.headerSection {
+  max-width: 1050px;
   margin: auto;
-  display: flex;
+  padding-bottom: 1.5rem;
+  display: grid;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
   background-color: rgb(255, 255, 255);
-  height: 80px;
   box-shadow: 0 5px 5px rgb(192, 192, 192);
+}
+header {
+  text-align: center;
+  margin: 1.5rem auto;
+  display: block;
 }
 
 button {
   font-size: 1rem;
-  padding: 8px 20px;
+  width: 100px;
+  padding: 6px 15px;
   border-radius: 20px;
   border: 1px solid gray;
   background-color: rgb(21, 103, 255);
   color: var(--text-white);
-  box-shadow: 0 5px 5px rgb(192, 192, 192);
   cursor: pointer;
+  margin: 0.5rem;
 }
+
 nav a {
   color: var(--text-white);
 }
@@ -46,7 +55,8 @@ a {
   margin: 5rem auto;
   width: 230px;
   height: 245px;
-  box-shadow: 0 0 20px rgb(211, 211, 211);
+  background-color: white;
+  box-shadow: 0 5px 10px rgb(139, 139, 139);
 }
 .drawerTitle {
   padding: 1rem 0.6rem 0.1rem;
@@ -95,6 +105,12 @@ a {
 .headerHamburger {
   margin: 1.3rem;
   margin-right: 2rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+.headerHamburger:hover {
+  border-radius: 50%;
+  background-color: rgba(151, 151, 151, 0.4);
 }
 .headerTitle {
   font-size: 0.9rem;
@@ -107,4 +123,40 @@ a {
   justify-content: space-around;
   font-size: 1rem;
   margin: 0.2rem;
+}
+
+/* Snackbar */
+
+.snackbarContainer {
+  max-width: 350px;
+  height: 40px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 6rem auto;
+  color: var(--text-light-gray);
+  background-color: var(--snackbar);
+  box-shadow: 0 5px 10px rgb(168, 168, 168);
+}
+.snackbarText {
+  font-size: 0.8rem;
+  padding: 0.5rem;
+}
+.snackbarRetry {
+  font-size: 0.8rem;
+  text-decoration: none;
+  padding: 0.5rem;
+  color: var(--primary-text-color);
+}
+.snackbarClose {
+  padding: 0.7rem;
+  width: 7px;
+  height: 15px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.snackbarClose:hover {
+  border-radius: 100%;
+  background-color: rgba(117, 117, 117, 0.281);
 }
