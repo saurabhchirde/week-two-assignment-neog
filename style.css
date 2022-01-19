@@ -35,9 +35,9 @@ button {
   font-size: 1rem;
   width: 100px;
   padding: 6px 15px;
-  border-radius: 20px;
+  border-radius: 2px;
   border: 1px solid gray;
-  background-color: rgb(21, 103, 255);
+  background-color: var(--primary-color);
   color: var(--text-white);
   cursor: pointer;
   margin: 0.5rem;
@@ -159,4 +159,75 @@ a {
 .snackbarClose:hover {
   border-radius: 100%;
   background-color: rgba(117, 117, 117, 0.281);
+}
+
+/* Badge */
+
+.badgeContainer {
+  max-width: 500px;
+  margin: 5rem auto;
+  padding: 2rem;
+  background-color: var(--text-white);
+}
+.hide {
+  display: none;
+}
+.badgeContainer div {
+  position: relative;
+  padding: 1rem;
+}
+.sm-badge {
+  padding: 0.15rem 0.4rem;
+  color: var(--text-white);
+  border-radius: 50%;
+  font-size: 0.8rem;
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 0;
+}
+.lg-badge {
+  padding: 0.1rem 0.5rem;
+  color: var(--text-white);
+  border-radius: 50%;
+  font-size: 1.5rem;
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 0;
+  left: 9.6rem;
+}
+
+.btn-badge {
+  padding: 0.15rem 0.4rem;
+  color: var(--text-white);
+  border-radius: 50%;
+  font-size: 0.8rem;
+  background-color: red;
+  position: absolute;
+  left: 0.9rem;
+}
+.btn-toggle-cont button {
+  background-color: white;
+  border: 0;
+  box-shadow: 0 5px 10px rgb(202, 202, 202);
+  color: black;
+}
+.btn-toggle-badge {
+  padding: 0.15rem 0.4rem;
+  color: var(--text-white);
+  border-radius: 50%;
+  font-size: 0.8rem;
+  background-color: var(--primary-color);
+  position: absolute;
+  left: 7.1rem;
+}
+
+.icon-badge {
+  padding: 0.15rem 0.4rem;
+  color: var(--text-white);
+  border-radius: 50%;
+  font-size: 0.8rem;
+  background-color: red;
+  position: absolute;
+  top: 0rem;
+  left: 1.6rem;
 }
