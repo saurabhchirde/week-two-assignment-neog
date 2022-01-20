@@ -148,6 +148,47 @@ small {
   font-size: 1.2rem;
 }
 
+/* Chips */
+
+.chips-container {
+  max-width: 950px;
+  background-color: var(--all-white);
+  margin: 4rem auto;
+  display: flex;
+  padding: 1.2rem;
+}
+
+.chips-container div {
+  display: inline-flex;
+}
+
+.chips-container input {
+  margin: 0.5rem;
+  border: none;
+  height: 1.8rem;
+  font-size: 1rem;
+}
+
+.chips-text {
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  margin: 0.3rem 0.1rem;
+  display: flex;
+  align-items: center;
+  background-color: var(--text-light-gray);
+}
+
+.chip-close-btn {
+  width: 2px;
+  background: none;
+  display: flex;
+  color: var(--icon-gray);
+  margin: 0 -0.5rem 0 0.5rem;
+  /* align-items: center; */
+  justify-content: center;
+  /* border-radius: 50%; */
+}
+
 /* drawer */
 
 .drawer-container {
