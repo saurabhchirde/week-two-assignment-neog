@@ -46,6 +46,7 @@ header {
   padding-top: 1.2rem;
   display: block;
 }
+
 header h1 {
   margin-bottom: 1.2rem;
 }
@@ -123,7 +124,7 @@ a {
   margin-top: 4rem;
   display: flex;
   flex-direction: column;
-width: 320px;
+  width: 320px;
   background-color: var(--all-white);
 }
 
@@ -152,7 +153,7 @@ width: 320px;
 }
 
 .card1-nav {
- display: flex;
+  display: flex;
   align-items: center;
   margin-bottom: 0.3rem;
 }
@@ -214,6 +215,7 @@ width: 320px;
 .heart-after {
   color: red;
 }
+
 .icon-clicked {
   background-color: var(--icon-clicked);
   border-radius: 50%;
@@ -496,6 +498,7 @@ width: 320px;
   width: 320px;
   background-color: var(--all-white);
 }
+
 .card6-body {
   display: flex;
   align-items: flex-start;
@@ -560,6 +563,7 @@ width: 320px;
   align-content: center;
   justify-content: space-around;
 }
+
 /*  */
 
 /* Chips */
@@ -619,6 +623,7 @@ width: 320px;
   margin-left: 1rem;
   color: var(--title-light-black);
 }
+
 .drawer-title h1 {
   font-size: 1.2rem;
 }
@@ -769,6 +774,18 @@ width: 320px;
   left: 9.6rem;
 }
 
+.btn-badge-cont button {
+ font-size: 1rem;
+ width: 100px; 
+  padding: 6px 15px; 
+  border-radius: 2px; 
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--text-white);
+  cursor: pointer;
+  margin: 0.5rem; 
+} 
+
 .btn-badge {
   padding: 0.15rem 0.4rem;
   color: var(--text-white);
@@ -780,6 +797,13 @@ width: 320px;
 }
 
 .btn-toggle-cont button {
+  font-size: 1rem;
+ width: 100px; 
+  padding: 6px 15px; 
+  border-radius: 2px; 
+  border: none;
+  cursor: pointer;
+  margin: 0.5rem; 
   background-color: white;
   border: 0;
   box-shadow: 0 5px 10px var(--container-shadow);
