@@ -88,6 +88,27 @@ a {
 
 /* All Cards */
 
+/* card type button */
+.card-type {
+  margin: auto;
+  max-width: 1050px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.card-type button {
+  font-size: 0.9rem;
+  border: none;
+  box-shadow: 0 5px 10px var(--container-shadow);
+  padding: 0.5rem;
+  margin: 0.3rem;
+  background-color: var(--primary-color);
+  color: var(--text-white);
+  cursor: pointer;
+}
+
 .all-cards {
   max-width: 1050px;
   margin: auto;
@@ -95,58 +116,53 @@ a {
   grid-template-columns: 1fr 1fr;
 }
 
-/* Card-1 */
+/* all in one template */
 
-.card-one-Container {
-  margin: 1rem;
+.card1-container {
+  margin: auto;
   margin-top: 4rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  width: 320px;
+width: 320px;
   background-color: var(--all-white);
 }
 
-.card-one-body:hover {
+.card1-body:hover {
   background-color: rgba(75, 75, 75, 0.4);
 }
 
-.card-one-img {
+.card1-img {
   width: 320px;
 }
 
-.card-one-text {
+.card1-text {
   padding: 1rem;
 }
 
-.card-one-text h1 {
+.card1-text h1 {
   margin-bottom: 0.3rem;
   font-size: 1.1rem;
 }
 
-.card-one-text p,
-.card-one-text small {
+.card1-text p,
+.card1-text small {
   font-size: 0.8rem;
   margin-top: 0.8rem;
   color: var(--dialog-text);
 }
 
-.card-one-nav {
-  width: 100%;
-  display: flex;
+.card1-nav {
+ display: flex;
   align-items: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
 }
 
-.card-one-btn {
+.card1-btn {
   width: 55%;
   padding-left: 0.8rem;
-  font-weight: bold;
-  font-size: 0.7rem;
 }
 
-.card-one-btn button {
+.card1-btn button {
   margin-right: 0.7rem;
   margin-left: -0.3rem;
   color: var(--primary-btn-color);
@@ -156,25 +172,24 @@ a {
   border: none;
   cursor: pointer;
 }
+
+.card1-icons {
+  width: 40%;
+  display: flex;
+  color: var(--icon-gray);
+  align-content: center;
+  justify-content: space-around;
+}
+
 .read:hover,
 .bookmark:hover {
   background-color: var(--secondary-color);
   border-radius: 2px;
 }
 
-.card-one-icons {
-  width: 40%;
-  display: flex;
-  color: var(--icon-gray);
-  align-content: center;
-  justify-content: space-around;
-  font-size: 1.2rem;
-}
-
 .heart,
 .share,
 .opt {
-  font-size: 1.2rem;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -204,164 +219,348 @@ a {
   border-radius: 50%;
 }
 
-/* Card-2 */
-
-.card-two-Container {
-  position: relative;
-  border-radius: 5px;
+/* card2 same template */
+.card2-container {
   margin: auto;
   margin-top: 4rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
   width: 320px;
   background-color: var(--all-white);
-  overflow: hidden;
 }
 
-.card-two-img {
-  width: 320px;
-  margin-top: -1rem;
-  border-radius: 5px 5px 0 0;
-}
-
-.card-two-title-text {
-  position: absolute;
-  top: 7.8rem;
-}
-
-.card-two-title-text h1 {
-  margin-bottom: 0.3rem;
-  font-size: 1.1rem;
-}
-
-.card-two-title-text,
-small {
-  color: var(--text-white);
-}
-
-.card-two-title-text {
-  padding: 1rem;
-}
-
-.card-two-body p {
-  font-size: 0.8rem;
-  margin: 0.5rem 1rem 0.7rem;
-  color: var(--dialog-text);
-}
-
-.card-two-nav {
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.card-two-btn {
-  width: 60%;
-  padding: 0.8rem;
-  font-weight: bold;
-  font-size: 0.7rem;
-}
-
-.card-two-btn button {
-  margin-right: 0.7rem;
-  margin-left: -0.3rem;
-  padding: 0.4rem 0.6rem;
-  color: var(--primary-btn-color);
-  font-size: 0.8rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.card-two-icons {
-  width: 40%;
-  display: flex;
-  color: var(--icon-gray);
-  align-content: center;
-  justify-content: space-around;
-  font-size: 1.2rem;
-}
-
-/* Card-3 */
-
-.card-three-Container {
-  margin: 1rem;
-  position: relative;
-  margin-top: 4rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  width: 320px;
-  background-color: var(--all-white);
-  overflow: hidden;
-}
-
-.card-three-body:hover {
+.card2-body:hover {
   background-color: rgba(75, 75, 75, 0.4);
 }
 
-.card-three-img {
-  position: relative;
-  z-index: 1;
+.card2-img {
   width: 320px;
-  margin-top: -1.5rem;
 }
 
-.card-three-text {
-  position: relative;
-  z-index: 2;
-  padding: 1rem;
-  background-color: var(--all-white);
+.card2-text {
+  margin-top: -4.5rem;
+  padding: 1rem 1rem 0.5rem;
 }
 
-.card-three-text h1 {
+.card2-text h1,
+.card2-text small {
+  color: var(--text-white);
+}
+
+.card2-text h1 {
   margin-bottom: 0.3rem;
   font-size: 1.1rem;
 }
 
-.card-three-text small {
-  color: var(--dialog-text);
-}
-.card-three-body p {
+.card2-text p {
   font-size: 0.8rem;
-  margin: 0.5rem 1rem 0.7rem;
+  margin-top: 1.2rem;
   color: var(--dialog-text);
 }
 
-.card-three-nav {
-  width: 100%;
+.card2-nav {
   display: flex;
   align-items: center;
+  margin-bottom: 0.3rem;
 }
 
-.card-three-btn {
-  width: 60%;
-  padding: 0.8rem;
-  font-weight: bold;
+.card2-btn {
+  width: 55%;
+  padding-left: 0.8rem;
 }
 
-.card-three-btn button {
+.card2-btn button {
   margin-right: 0.7rem;
   margin-left: -0.3rem;
-  padding: 0.4rem 0.6rem;
   color: var(--primary-btn-color);
   font-size: 0.8rem;
   background: none;
+  padding: 0.4rem 0.6rem;
   border: none;
   cursor: pointer;
 }
 
-.card-three-icons {
+.card2-icons {
   width: 40%;
   display: flex;
   color: var(--icon-gray);
   align-content: center;
   justify-content: space-around;
-  font-size: 1.2rem;
 }
+
+/* card 3 same template */
+.card3-container {
+  position: relative;
+  margin: auto;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  background-color: var(--all-white);
+}
+
+.card3-body:hover {
+  background-color: rgba(75, 75, 75, 0.4);
+}
+
+.card3-img {
+  position: relative;
+  width: 320px;
+  top: 4.3rem;
+}
+
+.card3-text {
+  padding: 1rem;
+}
+
+.card3-text h1,
+.card3-text small {
+  position: relative;
+  top: -13.7rem;
+}
+
+.card3-text h1 {
+  margin-bottom: 0.3rem;
+  font-size: 1.1rem;
+}
+
+.card3-text p,
+.card3-text small {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  color: var(--dialog-text);
+}
+
+.card3-nav {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+
+.card3-btn {
+  width: 55%;
+  padding-left: 0.8rem;
+}
+
+.card3-btn button {
+  margin-right: 0.7rem;
+  margin-left: -0.3rem;
+  color: var(--primary-btn-color);
+  font-size: 0.8rem;
+  background: none;
+  padding: 0.4rem 0.6rem;
+  border: none;
+  cursor: pointer;
+}
+
+.card3-icons {
+  width: 40%;
+  display: flex;
+  color: var(--icon-gray);
+  align-content: center;
+  justify-content: space-around;
+}
+
+/* card4 same template */
+.card4-container {
+  margin: auto;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  background-color: var(--all-white);
+}
+
+.card4-body:hover {
+  background-color: rgba(75, 75, 75, 0.4);
+}
+
+.card4-img {
+  width: 320px;
+}
+
+.card4-text {
+  padding: 1rem;
+}
+
+.card4-text h1 {
+  margin-bottom: 0.3rem;
+  font-size: 1.1rem;
+}
+
+.card4-text p,
+.card4-text small {
+  font-size: 0.8rem;
+  margin-top: 0.8rem;
+  color: var(--dialog-text);
+}
+
+.card4-nav {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+
+.card4-btn {
+  width: 55%;
+  padding-left: 0.8rem;
+}
+
+.card4-btn button {
+  margin-right: 0.7rem;
+  margin-left: -0.3rem;
+  color: var(--primary-btn-color);
+  font-size: 0.8rem;
+  background: none;
+  padding: 0.4rem 0.6rem;
+  border: none;
+  cursor: pointer;
+}
+
+.card4-icons {
+  display: none;
+}
+
+/* card5 same template */
+.card5-container {
+  margin: auto;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  background-color: var(--all-white);
+}
+
+.card5-body:hover {
+  background-color: rgba(75, 75, 75, 0.4);
+}
+
+.card5-img {
+  width: 320px;
+}
+
+.card5-text {
+  padding: 1rem;
+}
+
+.card5-text h1 {
+  margin-bottom: 0.3rem;
+  font-size: 1.1rem;
+}
+
+.card5-text p,
+.card5-text small {
+  font-size: 0.8rem;
+  margin-top: 0.8rem;
+  color: var(--dialog-text);
+}
+
+.card5-nav {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+
+.card5-btn {
+  width: 55%;
+  padding-left: 0.8rem;
+}
+
+.card5-btn button {
+  margin-right: 0.7rem;
+  margin-left: -0.3rem;
+  color: var(--primary-btn-color);
+  font-size: 0.8rem;
+  background: none;
+  padding: 0.4rem 0.6rem;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.card5-icons {
+  width: 40%;
+  display: flex;
+  color: var(--icon-gray);
+  align-content: center;
+  justify-content: space-around;
+}
+
+/* card-6 same template */
+
+.card6-container {
+  margin: auto;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  background-color: var(--all-white);
+}
+.card6-body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+}
+
+.card6-body:hover {
+  background-color: rgba(75, 75, 75, 0.4);
+}
+
+.card6-img {
+  width: 100px;
+  height: 100px;
+}
+
+.card6-text {
+  padding: 1rem;
+}
+
+.card6-text h1 {
+  margin-bottom: 0.3rem;
+  font-size: 1.1rem;
+}
+
+.card6-text small {
+  font-size: 0.8rem;
+  margin-top: 0.8rem;
+  color: var(--dialog-text);
+}
+
+.card6-text p {
+  display: none;
+}
+
+.card6-nav {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.3rem;
+  margin-top: 0.3rem;
+}
+
+.card6-btn {
+  width: 55%;
+  padding-left: 0.8rem;
+}
+
+.card6-btn button {
+  margin-right: 0.7rem;
+  margin-left: -0.3rem;
+  color: var(--primary-btn-color);
+  font-size: 0.8rem;
+  background: none;
+  padding: 0.4rem 0.6rem;
+  border: none;
+  cursor: pointer;
+}
+
+.card6-icons {
+  width: 40%;
+  display: flex;
+  color: var(--icon-gray);
+  align-content: center;
+  justify-content: space-around;
+}
+/*  */
 
 /* Chips */
 
@@ -426,11 +625,6 @@ small {
 
 .drawer-title small {
   color: var(--title-light-black);
-}
-
-.drawer-items {
-  /* color: black; */
-  /* margin: 1.2rem 0.5; */
 }
 
 .drawer-items a {
