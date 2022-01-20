@@ -83,10 +83,19 @@ a {
   text-decoration: none;
 }
 
-/* Cards */
+/* All Cards */
+
+.all-cards {
+  max-width: 1050px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Card-1 */
 
 .card-one-Container {
-  margin: auto;
+  margin: 1rem;
   margin-top: 4rem;
   display: flex;
   flex-direction: column;
@@ -114,7 +123,7 @@ a {
 }
 
 .card-one-text p,
-small {
+.card-one-text small {
   font-size: 0.8rem;
   margin-top: 0.8rem;
   color: var(--dialog-text);
@@ -140,6 +149,160 @@ small {
 }
 
 .card-one-icons {
+  width: 40%;
+  display: flex;
+  color: var(--icon-gray);
+  align-content: center;
+  justify-content: space-around;
+  font-size: 1.2rem;
+}
+
+/* Card-2 */
+
+.card-two-Container {
+  position: relative;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 320px;
+  background-color: var(--all-white);
+  overflow: hidden;
+}
+
+/* .card-two-body:hover {
+  background-color: rgba(75, 75, 75, 0.4);
+} */
+
+.card-two-img {
+  width: 320px;
+  margin-top: -1rem;
+  border-radius: 5px 5px 0 0;
+}
+
+.card-two-title-text {
+  position: absolute;
+  top: 7.8rem;
+}
+
+.card-two-title-text h1 {
+  margin-bottom: 0.3rem;
+  font-size: 1.1rem;
+}
+
+.card-two-title-text,
+small {
+  color: var(--text-white);
+}
+
+.card-two-title-text {
+  padding: 1rem;
+}
+
+.card-two-body p {
+  font-size: 0.8rem;
+  margin: 0.5rem 1rem 0.7rem;
+  color: var(--dialog-text);
+}
+
+.card-two-nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.card-two-btn {
+  width: 60%;
+  padding: 0.8rem;
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+
+.card-two-btn a {
+  margin-right: 1.7rem;
+  margin-left: 0.2rem;
+}
+
+.card-two-icons {
+  width: 40%;
+  display: flex;
+  color: var(--icon-gray);
+  align-content: center;
+  justify-content: space-around;
+  font-size: 1.2rem;
+}
+
+/* Card-3 */
+
+.card-three-Container {
+  margin: 1rem;
+  position: relative;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 320px;
+  background-color: var(--all-white);
+  overflow: hidden;
+}
+
+.card-three-body:hover {
+  background-color: rgba(75, 75, 75, 0.4);
+}
+
+.card-three-img {
+  position: relative;
+  z-index: 1;
+  width: 320px;
+  margin-top: -1.5rem;
+}
+
+.card-three-text {
+  position: relative;
+  z-index: 2;
+  padding: 1rem;
+  background-color: var(--all-white);
+}
+
+.card-three-text h1 {
+  margin-bottom: 0.3rem;
+  font-size: 1.1rem;
+}
+
+.card-three-text small {
+  color: var(--dialog-text);
+}
+.card-three-body p {
+  font-size: 0.8rem;
+  margin: 0.5rem 1rem 0.7rem;
+  color: var(--dialog-text);
+}
+
+.card-three-nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.card-three-btn {
+  width: 60%;
+  padding: 0.8rem;
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+
+.card-three-btn a {
+  margin-right: 1.7rem;
+  margin-left: 0.2rem;
+}
+
+.card-three-icons {
   width: 40%;
   display: flex;
   color: var(--icon-gray);
