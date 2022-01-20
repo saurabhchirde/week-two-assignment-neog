@@ -358,7 +358,7 @@ small {
 
 /* Dialogs */
 
-.dialog1 {
+.sm-discard-dialog {
   max-width: 280px;
   height: 75px;
   border-radius: 5px;
@@ -370,12 +370,12 @@ small {
   box-shadow: 0 0 15px var(--container-shadow);
 }
 
-.dialog1 p {
+.sm-discard-dialog p {
   width: 140px;
   color: var(--dialog-text);
 }
 
-.dialog1-btn {
+.sm-discard-dialog-btn {
   width: 150px;
   font-size: 0.9rem;
   margin-top: 1.8rem;
@@ -385,7 +385,7 @@ small {
   justify-content: space-between;
 }
 
-.dialog2 {
+.lg-option-dialog {
   position: relative;
   width: 250px;
   height: 400px;
@@ -397,14 +397,14 @@ small {
   overflow: hidden;
 }
 
-.dialog2 p {
-  font-size: 1.1rem;
-  padding: 1.2rem;
+.lg-option-dialog h1 {
+  font-size: 1rem;
+  padding: 1.2rem 1.2rem 1.2rem 1.8rem;
   background-color: white;
   box-shadow: 0 5px 10px -8px var(--container-shadow);
 }
 
-.dialog2-btn {
+.lg-option-dialog-btn {
   width: 220px;
   position: absolute;
   padding: 1rem;
@@ -418,17 +418,17 @@ small {
   box-shadow: 0 -5px 10px -8px var(--container-shadow);
 }
 
-.dialog2-btn a {
+.lg-option-dialog-btn a {
   padding-left: 1rem;
   padding-right: 0.5rem;
 }
 
-input {
-  width: 50px;
-  margin: 1rem 0.5rem 0.7rem 0.5rem;
+input[type="radio"] {
+  width: 55px;
+  margin: 1rem 0rem 0.7rem 0.5rem;
 }
 
-form span {
+form label {
   font-size: 0.9rem;
-  margin: auto 5rem auto auto;
+  margin: 1rem 7rem 0.7rem -0.3rem;
 }
