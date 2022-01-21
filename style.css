@@ -670,7 +670,7 @@ a {
 
 /* header-one */
 
- .header1-container {
+.header1-container {
   max-width: 950px;
   height: 50px;
   background-color: var(--primary-color);
@@ -691,8 +691,8 @@ a {
   align-items: center;
   justify-content: space-around;
   font-size: 1rem;
-  margin: 0.2rem;  
-} 
+  margin: 0.2rem;
+}
 
 .hamburger {
   margin: 0.2rem;
@@ -728,7 +728,7 @@ a {
 
 /* Header 2 */
 
- .header2-container {
+.header2-container {
   width: 100px;
   height: 50px;
   background-color: var(--primary-color);
@@ -772,10 +772,10 @@ a {
 .header3-icons {
   width: 140px;
   display: flex;
-  align-items: center;  
+  align-items: center;
   font-size: 1rem;
-  margin: 0.2rem;  
-} 
+  margin: 0.2rem;
+}
 
 /* Snackbar */
 
@@ -992,4 +992,61 @@ input[type="radio"] {
 form label {
   font-size: 0.9rem;
   margin: 1rem 7rem 0.7rem -0.3rem;
+}
+
+/* tabs */
+
+.tab-container {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem auto;
+  background-color: var(--all-white);
+  width: 16rem;
+  height: 27rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.tab-nav-menu {
+  display: flex;
+  font-size: 0.8rem;
+  flex-basis: 2;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.tab-nav-menu button {  
+  padding: 0.6rem;
+  margin: 0.5rem;
+}
+
+.tab-menu {
+  display: flex;
+  align-self: center;
+  justify-content: space-around;   
+}
+.tab-menu button{
+  font-size: 1.2rem;
+  margin: auto;
+  text-align: center;
+  color: var(--icon-gray);
+}
+.tab-menu h2{
+  padding-top: 0.5rem;
+  width: 3.45rem;  
+  font-size: 0.7rem;  
+}
+
+.tab-icon {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.tab-icon {
+  padding: 10px 15px;
+}
+
+.tab-icon:hover {
+  background-color: var(--icon-hover);
 }
