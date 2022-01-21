@@ -38,6 +38,7 @@ body {
   display: grid;
   background-color: var(--all-white);
   box-shadow: 0 5px 5px var(--container-shadow);
+
 }
 
 header {
@@ -77,6 +78,8 @@ nav {
   color: var(--text-white);
   cursor: pointer;
   margin: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px var(--container-shadow);
 }
 
 nav a {
@@ -90,20 +93,26 @@ a {
 /* All Cards */
 
 /* card type button */
-.card-type {
+.card-type,
+.header-type {
   margin: auto;
-  max-width: 1050px;
+  max-width: 650px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: var(--all-white);
+  border-radius: 10px;
 }
 
-.card-type button {
-  font-size: 0.9rem;
+.card-type button,
+.header-type button {
+  font-size: 0.8rem;
   border: none;
+  border-radius: 10px;
   box-shadow: 0 5px 10px var(--container-shadow);
-  padding: 0.5rem;
+  padding: 0.5rem 0.8rem;
   margin: 0.3rem;
   background-color: var(--primary-color);
   color: var(--text-white);
@@ -659,7 +668,9 @@ a {
 
 /* Header */
 
-.header-container {
+/* header-one */
+
+ .header1-container {
   max-width: 950px;
   height: 50px;
   background-color: var(--primary-color);
@@ -669,31 +680,102 @@ a {
   align-items: center;
 }
 
-.header-hamburger {
-  margin: 1.3rem;
-  margin-right: 2rem;
-  padding: 1rem;
-  cursor: pointer;
-}
-
-.header-hamburger:hover {
-  border-radius: 50%;
-  background-color: var(--header-hamburger-hover);
-}
-
-.header-title {
+.header1-title {
   font-size: 0.9rem;
   flex: 1;
 }
 
-.header-icons {
+.header1-icons {
   width: 140px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   font-size: 1rem;
+  margin: 0.2rem;  
+} 
+
+.hamburger {
   margin: 0.2rem;
+  padding: 0.8rem 0.9rem;
+  cursor: pointer;
 }
+
+.hamburger:hover {
+  border-radius: 50%;
+  background-color: var(--header-hamburger-hover);
+}
+
+.download,
+.print,
+.bookm {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: var(--all-white);
+}
+
+.download:hover,
+.print:hover,
+.bookm:hover {
+  border-radius: 50%;
+  background-color: var(--icon-hover);
+}
+
+/* Header 2 */
+
+ .header2-container {
+  width: 100px;
+  height: 50px;
+  background-color: var(--primary-color);
+  color: var(--text-white);
+  margin: 6rem auto;
+  display: flex;
+  align-items: center;
+  border-radius: 0 0 20px 0;
+}
+
+.header2-title {
+  display: none;
+}
+
+.header2-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1rem;
+}
+
+/* Header 3 */
+
+.header3-container {
+  max-width: 950px;
+  height: 100px;
+  background-color: var(--primary-color);
+  color: var(--text-white);
+  margin: 6rem auto;
+  display: flex;
+  align-items: flex-start;
+}
+
+.header3-title {
+  font-size: 0.9rem;
+  flex: 1;
+  margin: 1rem;
+  align-self: flex-end;
+}
+
+.header3-icons {
+  width: 140px;
+  display: flex;
+  align-items: center;  
+  font-size: 1rem;
+  margin: 0.2rem;  
+} 
 
 /* Snackbar */
 
@@ -775,16 +857,16 @@ a {
 }
 
 .btn-badge-cont button {
- font-size: 1rem;
- width: 100px; 
-  padding: 6px 15px; 
-  border-radius: 2px; 
+  font-size: 1rem;
+  width: 100px;
+  padding: 6px 15px;
+  border-radius: 2px;
   border: none;
   background-color: var(--primary-color);
   color: var(--text-white);
   cursor: pointer;
-  margin: 0.5rem; 
-} 
+  margin: 0.5rem;
+}
 
 .btn-badge {
   padding: 0.15rem 0.4rem;
@@ -798,12 +880,12 @@ a {
 
 .btn-toggle-cont button {
   font-size: 1rem;
- width: 100px; 
-  padding: 6px 15px; 
-  border-radius: 2px; 
+  width: 100px;
+  padding: 6px 15px;
+  border-radius: 2px;
   border: none;
   cursor: pointer;
-  margin: 0.5rem; 
+  margin: 0.5rem;
   background-color: white;
   border: 0;
   box-shadow: 0 5px 10px var(--container-shadow);
@@ -818,6 +900,10 @@ a {
   background-color: var(--primary-color);
   position: absolute;
   left: 7.1rem;
+}
+
+.btn-badge-hide {
+  display: none;
 }
 
 .icon-badge {
