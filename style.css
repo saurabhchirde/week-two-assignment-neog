@@ -91,8 +91,8 @@ a {
 }
 
 /* All Cards */
-
 /* card type button */
+
 .card-type,
 .header-type {
   margin: auto;
@@ -138,7 +138,8 @@ a {
 }
 
 .card1-body:hover {
-  background-color: rgba(75, 75, 75, 0.4);
+  filter: brightness(95%);
+  background-color: rgba(102, 102, 102, 0.1);
 }
 
 .card1-img {
@@ -231,6 +232,7 @@ a {
 }
 
 /* card2 same template */
+
 .card2-container {
   margin: auto;
   margin-top: 4rem;
@@ -241,7 +243,8 @@ a {
 }
 
 .card2-body:hover {
-  background-color: rgba(75, 75, 75, 0.4);
+  filter: brightness(95%);
+  background-color: rgba(102, 102, 102, 0.1);
 }
 
 .card2-img {
@@ -300,6 +303,7 @@ a {
 }
 
 /* card 3 same template */
+
 .card3-container {
   position: relative;
   margin: auto;
@@ -311,7 +315,8 @@ a {
 }
 
 .card3-body:hover {
-  background-color: rgba(75, 75, 75, 0.4);
+  filter: brightness(95%);
+  background-color: rgba(102, 102, 102, 0.1);
 }
 
 .card3-img {
@@ -373,6 +378,7 @@ a {
 }
 
 /* card4 same template */
+
 .card4-container {
   margin: auto;
   margin-top: 4rem;
@@ -383,7 +389,8 @@ a {
 }
 
 .card4-body:hover {
-  background-color: rgba(75, 75, 75, 0.4);
+  filter: brightness(95%);
+  background-color: rgba(102, 102, 102, 0.1);
 }
 
 .card4-img {
@@ -433,6 +440,7 @@ a {
 }
 
 /* card5 same template */
+
 .card5-container {
   margin: auto;
   margin-top: 4rem;
@@ -443,7 +451,8 @@ a {
 }
 
 .card5-body:hover {
-  background-color: rgba(75, 75, 75, 0.4);
+  filter: brightness(95%);
+  background-color: rgba(102, 102, 102, 0.1);
 }
 
 .card5-img {
@@ -515,7 +524,8 @@ a {
 }
 
 .card6-body:hover {
-  background-color: rgba(75, 75, 75, 0.4);
+  filter: brightness(95%);
+  background-color: rgba(102, 102, 102, 0.1);
 }
 
 .card6-img {
@@ -573,8 +583,6 @@ a {
   justify-content: space-around;
 }
 
-/*  */
-
 /* Chips */
 
 .chips-container {
@@ -605,6 +613,10 @@ a {
   background-color: var(--text-light-gray);
 }
 
+input:focus {
+  outline: none;
+}
+
 .chip-close-btn {
   width: 10px;
   border: none;
@@ -620,7 +632,8 @@ a {
 /* drawer */
 
 .drawer-container {
-  margin: 5rem auto;
+  position: relative;
+  margin: 2rem auto;
   width: 230px;
   height: 245px;
   background-color: white;
@@ -666,23 +679,100 @@ a {
   margin-left: 2rem;
 }
 
-/* Header */
+/* drawer fixed text */
 
+/* .drawer-fixed-container {
+  position: relative;
+  max-width: 1050px;
+  height: 24rem;
+  background-color: var(--all-white);
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  overflow: scroll;
+  align-items: flex-start;
+  justify-content: baseline;
+  margin: auto;
+  border: 1px solid var(--icon-gray);
+}
+
+.fixed-title {
+  position: sticky;
+  top: 0;
+  background-color: var(--all-white);
+  width: 180px;
+  padding-left: 1.5rem;
+  padding-bottom: 0.5rem;
+  margin: 0;
+  margin-top: -4.2rem;
+}
+
+.sideDrawer {
+  position: relative;
+  margin-top: 3.2rem;
+  padding-top: 1rem;
+  margin-bottom: 0;
+  height: auto;
+  overflow: scroll;
+}
+
+.drawer-fixed-title {
+  background-color: var(--primary-btn-color);
+  color: var(--text-white);
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+
+.drawer-fixed-para {
+  padding: 1rem;
+}
+
+.fixed-text-area {
+  overflow: scroll;
+} */
+
+/* Header */
 /* header-one */
 
+.all-header {
+  display: flex;
+  max-width: 1050px;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.header1-with-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+  max-width: 450px;
+  height: 22rem;
+  overflow: scroll;
+  margin: 3rem auto;
+  background-color: var(--all-white);
+}
+
+.header1-with-text p {
+  padding: 1rem;
+}
+
 .header1-container {
-  max-width: 950px;
+  position: sticky;
+  top: 0;
   height: 50px;
   background-color: var(--primary-color);
   color: var(--text-white);
-  margin: 6rem auto;
   display: flex;
   align-items: center;
+  justify-content: stretch;
 }
 
 .header1-title {
   font-size: 0.9rem;
-  flex: 1;
+  flex-grow: 1;
 }
 
 .header1-icons {
@@ -728,12 +818,29 @@ a {
 
 /* Header 2 */
 
+.header2-with-text {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+  max-width: 450px;
+  height: 22rem;
+  overflow: scroll;
+  margin: 3rem auto;
+  background-color: var(--all-white);
+}
+
+.header2-with-text p {
+  padding: 1rem;
+}
+
 .header2-container {
+  position: sticky;
+  top: 0;
   width: 100px;
   height: 50px;
   background-color: var(--primary-color);
   color: var(--text-white);
-  margin: 6rem auto;
   display: flex;
   align-items: center;
   border-radius: 0 0 20px 0;
@@ -752,12 +859,23 @@ a {
 
 /* Header 3 */
 
+.header3-with-text {
+  max-width: 450px;
+  height: 22rem;
+  overflow: scroll;
+  background-color: var(--all-white);
+  margin: 3rem auto 5rem;
+}
+
+.header3-with-text p {
+  padding: 1rem;
+}
+
 .header3-container {
-  max-width: 950px;
   height: 100px;
   background-color: var(--primary-color);
   color: var(--text-white);
-  margin: 6rem auto;
+
   display: flex;
   align-items: flex-start;
 }
@@ -1015,7 +1133,7 @@ form label {
   justify-content: space-around;
 }
 
-.tab-nav-menu button {  
+.tab-nav-menu button {
   padding: 0.6rem;
   margin: 0.5rem;
 }
@@ -1023,18 +1141,20 @@ form label {
 .tab-menu {
   display: flex;
   align-self: center;
-  justify-content: space-around;   
+  justify-content: space-around;
 }
-.tab-menu button{
+
+.tab-menu button {
   font-size: 1.2rem;
   margin: auto;
   text-align: center;
   color: var(--icon-gray);
 }
-.tab-menu h2{
+
+.tab-menu h2 {
   padding-top: 0.5rem;
-  width: 3.45rem;  
-  font-size: 0.7rem;  
+  width: 3.45rem;
+  font-size: 0.7rem;
 }
 
 .tab-icon {

@@ -1,76 +1,6 @@
-// const chipCloseBtn = document.querySelectorAll(".chip-close-btn");
-// const textValue = document.querySelector("input");
-// const chipEle = document.querySelector(".chips-element");
-
 const heartAll = document.querySelectorAll(".heart");
 const shareAll = document.querySelectorAll(".share");
 const optAll = document.querySelectorAll(".opt");
-
-// header layout change using btn
-// const headerOneBtn = document.querySelector(".header-one");
-// const headerTwoBtn = document.querySelector(".header-two");
-// const headerThreeBtn = document.querySelector(".header-three");
-// const headEl = document.querySelectorAll(".head");
-
-// headerOneBtn.addEventListener("click",()=>{
-//   headEl[0].classList.add("header1-container");
-//   headEl[0].classList.remove("header2-container","header3-container");
-
-//   headEl[1].classList.add("header1-title");
-//   headEl[1].classList.remove("header2-title","header3-title");
-
-//   headEl[2].classList.add("header1-icons");
-//   headEl[2].classList.remove("header2-icons","header3-icons");
-
-//   headEl[3].classList.add("download");
-//   headEl[3].classList.remove("hide");
-
-//   headEl[4].classList.add("print");
-//   headEl[4].classList.remove("hide");
-
-//   headEl[5].classList.add("bookm");
-//   headEl[5].classList.remove("hide");
-// });
-
-// headerTwoBtn.addEventListener("click",()=>{
-//   headEl[0].classList.add("header2-container");
-//   headEl[0].classList.remove("header1-container","header3-container")
-
-//   headEl[1].classList.add("header2-title");
-//   headEl[1].classList.remove("header1-title","header3-title")
-
-//   headEl[2].classList.add("header2-icons");
-//   headEl[2].classList.remove("header1-icons","header3-icons")
-
-//   headEl[3].classList.add("hide");
-//   headEl[3].classList.remove("download")
-
-//   headEl[4].classList.add("hide");
-//   headEl[4].classList.remove("print")
-
-//   headEl[5].classList.add("bookm");
-//   headEl[5].classList.remove("hide")
-// });
-
-// headerThreeBtn.addEventListener("click",()=>{
-//   headEl[0].classList.add("header3-container");
-//   headEl[0].classList.remove("header1-container","header2-container")
-
-//   headEl[1].classList.add("header3-title");
-//   headEl[1].classList.remove("header1-title","header2-title")
-
-//   headEl[2].classList.add("header3-icons");
-//   headEl[2].classList.remove("header1-icons","header2-icons")
-
-//   headEl[3].classList.add("download");
-//   headEl[3].classList.remove("hide")
-
-//   headEl[4].classList.add("print");
-//   headEl[4].classList.remove("hide")
-
-//   headEl[5].classList.add("bookm");
-//   headEl[5].classList.remove("hide")
-// });
 
 // card layout change with btn
 const cardone = document.querySelector(".card-one");
@@ -96,8 +26,8 @@ cardone.addEventListener("click", () => {
   comCard[5].classList.remove("card2-btn", "card3-btn", "card4-btn", "card5-btn", "card6-btn");
   comCard[6].classList.add("card1-icons");
   comCard[6].classList.remove("card2-icons", "card3-icons", "card4-icons", "card5-icons", "card6-icons");
-});
-
+  
+})
 cardtwo.addEventListener("click", () => {
   comCard[0].classList.add("card2-container");
   comCard[0].classList.remove("card1-container", "card3-container", "card4-container", "card5-container", "card6-container");
@@ -228,85 +158,3 @@ optAll[2].addEventListener("click", () => {
   optAll[2].classList.add("icon-clicked");
   heartAll[2].classList.remove("icon-clicked");
 });
-
-// // chips
-
-// let chipsItems = ["Apple", "Banana", "Milkshake"];
-
-// function remove(i) {
-//   chipsItems = chipsItems.filter((item) => chipsItems.indexOf(item) != i);
-//   render();
-// }
-
-// function render() {
-//   chipEle.innerHTML = "";
-//   chipsItems.map((item, index) => {
-//     chipEle.innerHTML += `<div class="chips-text">${item}         
-// <a href="javascript: remove(${index})"><button class="chip-close-btn"><i class="fas fa-times-circle"></i>
-//     </button></a>
-//   </div>`;
-//   });
-// }
-
-// document.addEventListener("keydown", (e) => {
-//   if (e.keyCode === 13) {
-//     if (textValue.value === "") alert("Enter some input");
-//     else {
-//       const chipText = textValue.value;
-//       chipsItems.push(chipText);
-//       render();
-//       textValue.value = "";
-//     }
-//   }
-// });
-
-// window.onload = function () {
-//   render();
-//   textValue.focus();
-// };
-
-
-// drawer
-
-// const inbox = document.querySelector(".inbox");
-// const star = document.querySelector(".star");
-// const sent = document.querySelector(".sent");
-// const draft = document.querySelector(".draft");
-
-// inbox.addEventListener("click", () => {
-//   console.log("clicked inbox");
-//   inbox.classList.add("drawer-active");
-//   star.classList.remove("drawer-active");
-//   sent.classList.remove("drawer-active");
-//   draft.classList.remove("drawer-active");
-// });
-
-// star.addEventListener("click", () => {
-//   console.log("clicked star");
-//   star.classList.add("drawer-active");
-//   inbox.classList.remove("drawer-active");
-//   sent.classList.remove("drawer-active");
-//   draft.classList.remove("drawer-active");
-// })
-
-// sent.addEventListener("click", () => {
-//   console.log("clicked send");
-//   sent.classList.add("drawer-active");
-//   star.classList.remove("drawer-active");
-//   inbox.classList.remove("drawer-active");
-//   draft.classList.remove("drawer-active");
-// })
-// draft.addEventListener("click", () => {
-//   console.log("clicked draft");
-//   draft.classList.add("drawer-active");
-//   star.classList.remove("drawer-active");
-//   sent.classList.remove("drawer-active");
-//   inbox.classList.remove("drawer-active");
-// })
-
-// badge
-
-// document.querySelector(".btn-toggle-badge").addEventListener("click",()=>{
-//   console.log("clicked")
-//  document.querySelector(".btn-toggle-badge").classList.toggle("hide");
-// })
