@@ -6,7 +6,6 @@
 
 :root {
   --primary-color: #6201ee;
-  --primary-btn-color: #5913b9;
   --primary-text-color: #9980bb;
   --secondary-color: #e7d9fe;
   --text-white: white;
@@ -38,7 +37,7 @@ body {
   display: grid;
   background-color: var(--all-white);
   box-shadow: 0 5px 5px var(--container-shadow);
-
+  border-radius: 0 0 10px 10px;
 }
 
 header {
@@ -50,6 +49,7 @@ header {
 
 header h1 {
   margin-bottom: 1.2rem;
+  color: var(--primary-color);
 }
 
 nav {
@@ -96,10 +96,11 @@ a {
 .card-type,
 .snackbar-type-btn {
   margin: auto;
-  max-width: 650px;
+  max-width: 950px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   margin-top: 1rem;
   padding: 0.5rem;
   background-color: var(--secondary-color);
@@ -109,7 +110,7 @@ a {
 
 .type-btn{
   font-size: 0.8rem;
-  border: none;
+  border: none;  
   border-radius: 10px;
   box-shadow: 0 0 20px 5px var(--all-white);
   padding: 0.5rem 0.8rem;
