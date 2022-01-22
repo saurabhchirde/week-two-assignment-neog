@@ -1145,6 +1145,7 @@ input:focus {
   height: 400px;
   margin: auto;
   margin-top: 3rem;
+  margin-bottom: 4rem;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 0 20px 5px var(--container-shadow);
@@ -1194,6 +1195,7 @@ form label {
   display: flex;
   flex-direction: column;
   margin: 2rem auto;
+  margin-bottom: 4rem;
   border-radius: 10px;
   background-color: var(--all-white);
   width: 16rem;
