@@ -1305,6 +1305,8 @@ form label {
   margin: 0.5rem auto;
   border-bottom: 1px solid var(--hr-line);
   padding: 0.8rem 0;
+
+  cursor: pointer;
 }
 
 .tab-explore {
@@ -1335,6 +1337,7 @@ form label {
   margin: 0.5rem auto;
   box-shadow: 0 5px 10px -6px var(--container-shadow);
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .explore-card img {
