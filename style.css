@@ -1379,15 +1379,15 @@ form label {
 }
 
 /* .tab-active{
-  position: absolute;
-  margin-top: 2rem;
-  /* margin-left: -9.5rem; 
-  height: 50px;
   background-color: rgba(0, 0, 0, 0.185);
-  width: 80px;
+  /* border-radius: 10px 10px 0 0;  
 } */
+
+.tab-flight{
+  margin: 3rem auto;
+  font-size: 0.6rem;
+}
 
 .hide {
   display: none;
-
 }
