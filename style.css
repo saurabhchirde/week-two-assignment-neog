@@ -1273,6 +1273,7 @@ form label {
 
 .tab-menu button:hover {
   background-color: var(--icon-hover);
+  border-radius: 10px 10px 0 0;
 }
 
 .tab-menu h2 {
@@ -1378,10 +1379,10 @@ form label {
   margin: auto;
 }
 
-/* .tab-active{
+.tab-active{
   background-color: rgba(0, 0, 0, 0.185);
-  /* border-radius: 10px 10px 0 0;  
-} */
+  border-radius: 10px 10px 0 0;  
+} 
 
 .tab-flight{
   margin: 3rem auto;
