@@ -140,6 +140,7 @@ hr {
 .card1-container {
   margin: auto;
   margin-top: 4rem;
+  margin-bottom: 4rem;
   display: flex;
   flex-direction: column;
   width: 320px;
@@ -247,6 +248,7 @@ hr {
 .card2-container {
   margin: auto;
   margin-top: 4rem;
+  margin-bottom: 4rem;
   display: flex;
   flex-direction: column;
   width: 320px;
@@ -323,6 +325,7 @@ hr {
   position: relative;
   margin: auto;
   margin-top: 4rem;
+  margin-bottom: 4rem;
   display: flex;
   flex-direction: column;
   width: 320px;
@@ -399,6 +402,7 @@ hr {
 .card4-container {
   margin: auto;
   margin-top: 4rem;
+  margin-bottom: 4rem;
   display: flex;
   flex-direction: column;
   width: 320px;
@@ -464,6 +468,7 @@ hr {
 .card5-container {
   margin: auto;
   margin-top: 4rem;
+  margin-bottom: 4rem;
   display: flex;
   flex-direction: column;
   width: 320px;
@@ -534,6 +539,7 @@ hr {
 .card6-container {
   margin: auto;
   margin-top: 4rem;
+  margin-bottom: 4rem;
   display: flex;
   flex-direction: column;
   width: 320px;
@@ -1186,7 +1192,6 @@ form label {
 .tab-container {
   position: relative;
   display: flex;
-
   flex-direction: column;
   margin: 2rem auto;
   border-radius: 10px;
@@ -1371,6 +1376,16 @@ form label {
   margin: auto;
 }
 
+/* .tab-active{
+  position: absolute;
+  margin-top: 2rem;
+  /* margin-left: -9.5rem; 
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.185);
+  width: 80px;
+} */
+
 .hide {
   display: none;
+
 }
