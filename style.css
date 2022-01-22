@@ -94,7 +94,7 @@ a {
 /* card type button */
 
 .card-type,
-.header-type {
+.snackbar-type-btn {
   margin: auto;
   max-width: 650px;
   display: flex;
@@ -106,8 +106,7 @@ a {
   border-radius: 10px;
 }
 
-.card-type button,
-.header-type button {
+.type-btn{
   font-size: 0.8rem;
   border: none;
   border-radius: 10px;
@@ -896,15 +895,24 @@ input:focus {
 }
 
 /* Snackbar */
+/* Snackbarbaseline */
 
-.snackbar-container {
+.window-for-snackbars{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 2rem auto;  
+}
+
+.snackbar-baseline-container {
+  position: fixed;
+  bottom: 1rem;  
   max-width: 350px;
-  height: 40px;
-  border-radius: 2px;
+  padding: 0.1rem 0.3rem;
+  border-radius: 5px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  margin: 6rem auto;
+  justify-content: space-around;  
   color: var(--text-light-gray);
   background-color: var(--snackbar);
   box-shadow: 0 5px 10px var(--container-shadow);
@@ -923,16 +931,56 @@ input:focus {
 }
 
 .snackbar-close {
-  padding: 0.7rem;
-  width: 7px;
-  height: 15px;
+  margin: 0.1rem;
+  padding: 0.6rem 0.75rem;  
   font-size: 0.8rem;
   cursor: pointer;
 }
 
 .snackbar-close:hover {
-  border-radius: 100%;
+  border-radius: 50%;
   background-color: var(--header-hamburger-hover);
+}
+
+/* Snack leading */
+
+.snackbar-leading-container {
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;  
+  padding: 0.1rem 0.3rem;
+  max-width: 300px;
+  margin: auto;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--text-light-gray);
+  background-color: var(--snackbar);
+  box-shadow: 0 5px 10px var(--container-shadow);
+}
+
+/* Snack stacked */
+
+.snackbar-stacked-container {
+  position: fixed;
+  bottom: 1rem;  
+  padding: 0.1rem 0.3rem;
+  margin: auto; 
+  max-width: 400px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;  
+  justify-content: space-around;
+  color: var(--text-light-gray);
+  background-color: var(--snackbar);
+  box-shadow: 0 5px 10px var(--container-shadow);
+}
+
+.stacked-btn{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 /* Badge */

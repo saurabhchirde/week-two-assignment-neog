@@ -1,37 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
-    />
-    <title>Snackbar</title>
-  </head>
-  <body>
-    <header class="header-section">
-      <h1>Snackbar</h1>
-      <nav>
-        <a href="/cards.html"><button class="card">Cards</button></a>
-        <a href="/chips.html"><button class="chips">Chips</button></a>
-        <a href="/drawer.html"><button class="drawer">Drawer</button></a>
-        <a href="/header.html"><button class="header">Header</button></a>
-        <a href="/badge.html"><button class="badge">Badge</button></a>
-        <a href="/snackbar.html"><button class="snackbar">Snackbar</button></a>
-        <a href="/dialogs.html"><button class="dialogs">Dialogs</button></a>
-        <a href="/tabs.html"><button class="tabs">Tabs</button></a>
-      </nav>
-    </header>
-    <section class="snackbar-container">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <title>Snackbar</title>
+</head>
+
+<body>
+  <header class="header-section">
+    <h1>Snackbar</h1>
+    <nav>
+      <a href="/cards.html"><button class="card">Cards</button></a>
+      <a href="/chips.html"><button class="chips">Chips</button></a>
+      <a href="/drawer.html"><button class="drawer">Drawer</button></a>
+      <a href="/header.html"><button class="header">Header</button></a>
+      <a href="/badge.html"><button class="badge">Badge</button></a>
+      <a href="/snackbar.html"><button class="snackbar">Snackbar</button></a>
+      <a href="/dialogs.html"><button class="dialogs">Dialogs</button></a>
+      <a href="/tabs.html"><button class="tabs">Tabs</button></a>
+    </nav>
+  </header>
+  <div class="snackbar-type-btn">
+    <button class="type-btn snackbar-baseline-btn">BASELINE</button>
+    <button class="type-btn snackbar-leading-btn">LEADING</button>
+    <button class="type-btn snackbar-stacked-btn">STACKED</button>
+  </div>
+  <div class="window-for-snackbars">
+    <div class="snackbar-baseline-container">
       <div class="snackbar-text">Can't send photo. Retry in 5 seconds.</div>
-      <a href=""><div class="snackbar-retry">RETRY</div></a>
+      <a href="">
+        <div class="snackbar-retry">RETRY</div>
+      </a>
       <div class="snackbar-close"><i class="fas fa-times"></i></div>
-    </section>
-    <script src="/js/snackbar.js"></script>
-  </body>
+    </div>
+    <div class="snackbar-leading-container hide">
+      <div class="snackbar-text">Your photo has been archived.</div>
+      <a href="">
+        <div class="snackbar-retry">UNDO</div>
+      </a>
+      <div class="snackbar-close"><i class="fas fa-times"></i></div>
+    </div>
+    <div class="snackbar-stacked-container hide">
+      <div class="snackbar-text">This item already has the label "travel". You can add a new label.</div>
+      <div class="stacked-btn">
+      <a href="">
+        <div class="snackbar-retry">ADD A NEW LABEL</div>
+      </a>
+      <div class="snackbar-close"><i class="fas fa-times"></i></div></div>
+    </div>
+  </div>
+  <script src="/js/snackbar.js"></script>
+</body>
+
 </html>
