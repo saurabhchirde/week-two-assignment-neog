@@ -68,7 +68,7 @@ nav {
   }
 }
 
-.header-section button {
+.nav-btn {
   font-size: 1rem;
   width: 100px;
   padding: 6px 15px;
@@ -102,15 +102,16 @@ a {
   justify-content: center;
   margin-top: 1rem;
   padding: 0.5rem;
-  background-color: var(--all-white);
+  background-color: var(--secondary-color);
   border-radius: 10px;
+  border: 1px dashed var(--all-white);
 }
 
 .type-btn{
   font-size: 0.8rem;
   border: none;
   border-radius: 10px;
-  box-shadow: 0 5px 10px var(--container-shadow);
+  box-shadow: 0 0 20px 5px var(--all-white);
   padding: 0.5rem 0.8rem;
   margin: 0.3rem;
   background-color: var(--primary-color);
