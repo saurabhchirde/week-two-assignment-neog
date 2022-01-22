@@ -5,6 +5,7 @@ const flightsBtn= document.querySelector(".flight-btn")
 exploreBtn.addEventListener("click",()=>{
     document.querySelector(".tab-explore").classList.remove("hide");
     document.querySelector(".tab-trips").classList.add("hide");
+    document.querySelector(".tab-flight").classList.add("hide");
 
     exploreBtn.classList.add("tab-active");
     tripsBtn.classList.remove("tab-active");
@@ -14,6 +15,8 @@ exploreBtn.addEventListener("click",()=>{
 tripsBtn.addEventListener("click",()=>{
     document.querySelector(".tab-explore").classList.add("hide");
     document.querySelector(".tab-trips").classList.remove("hide");
+    document.querySelector(".tab-flight").classList.add("hide");
+    
     document.querySelector("tab-active-explore").classList.add("tab-active-trips");
     document.querySelector("tab-active-explore").classList.remove("tab-active-flights");
 
@@ -26,6 +29,7 @@ flightsBtn.addEventListener("click",()=>{
     document.querySelector(".tab-explore").classList.add("hide");
     document.querySelector(".tab-trips").classList.add("hide");
     document.querySelector(".tab-flight").classList.remove("hide");
+
     document.querySelector("tab-active-explore").classList.add("tab-active-flights");
     document.querySelector("tab-active-explore").classList.remove("tab-active-trips");
 
