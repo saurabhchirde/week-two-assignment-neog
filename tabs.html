@@ -1,62 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
-    />
-    <title>Tabs</title>
-  </head>
-  <body>
-    <header class="header-section">
-      <h1>Tabs</h1>
-      <nav>
-        <a href="/cards.html"><button class="nav-btn card">Cards</button></a>
-        <a href="/chips.html"><button class="nav-btn chips">Chips</button></a>
-        <a href="/drawer.html"><button class="nav-btn drawer">Drawer</button></a>
-        <a href="/header.html"><button class="nav-btn header">Header</button></a>
-        <a href="/badge.html"><button class="nav-btn badge">Badge</button></a>
-        <a href="/snackbar.html"><button class="nav-btn snackbar">Snackbar</button></a>
-        <a href="/dialogs.html"><button class="nav-btn dialogs">Dialogs</button></a>
-        <a href="/tabs.html"><button class="nav-btn tabs">Tabs</button></a>
-      </nav>
-    </header>
-    <div class="tab-container">
-      <div class="tab-nav-menu">
-        <div class="hamburger"><i class="fas fa-bars"></i></div>
-        <div class="tab-title"> 
-          <h3>My Travel</h3>
-        </div>
-        <button class="share"><i class="fas fa-share-alt"></i></button>
-        <button class="opt"><i class="fas fa-search"></i></button>
-        <button class="opt"><i class="fas fa-ellipsis-v"></i></button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <title>Tabs</title>
+</head>
+
+<body>
+  <header class="header-section">
+    <h1>Tabs</h1>
+    <nav>
+      <a href="/cards.html"><button class="nav-btn card">Cards</button></a>
+      <a href="/chips.html"><button class="nav-btn chips">Chips</button></a>
+      <a href="/drawer.html"><button class="nav-btn drawer">Drawer</button></a>
+      <a href="/header.html"><button class="nav-btn header">Header</button></a>
+      <a href="/badge.html"><button class="nav-btn badge">Badge</button></a>
+      <a href="/snackbar.html"><button class="nav-btn snackbar">Snackbar</button></a>
+      <a href="/dialogs.html"><button class="nav-btn dialogs">Dialogs</button></a>
+      <a href="/tabs.html"><button class="nav-btn tabs">Tabs</button></a>
+    </nav>
+  </header>
+  <div class="tab-container">
+    <div class="tab-nav-menu">
+      <div class="tab"><i class="fas fa-bars"></i></div>
+      <div class="tab-title">
+        <h3>My Travel</h3>
       </div>
-      <div class="tab-menu">
-        <button class="tab-icon"><span class="fas fa-compass"><h2>EXPLORE</h2><span</button>
-        <button class="tab-icon"><span class="fas fa-plane-departure"><h2>FLIGHTS</h2></span></button>
-        <button class="tab-icon"><span class="fas fa-suitcase"><h2>TRIPS</h2></span></button>
+      <div class="tab-main-icons">
+        <button class="opt tab"><i class="fas fa-share-alt"></i></button>
+        <button class="opt tab"><i class="fas fa-search"></i></button>
+        <button class="opt tab"><i class="fas fa-ellipsis-v"></i></button>
       </div>
     </div>
-    <script src="/js/tabs.js"></script>
-  </body>
-</html>
+    <div class="tab-menu">
+      <button class="tab-icon"><span class="fas fa-compass">
+          <h2>EXPLORE</h2>
+          <span</button> <button class="tab-icon"><span class="fas fa-plane-departure">
+              <h2>FLIGHTS</h2>
+            </span></button>
+      <button class="tab-icon"><span class="fas fa-suitcase">
+          <h2>TRIPS</h2>
+        </span></button>
+    </div>
+  </div>
+  <script src="/js/tabs.js"></script>
+</body>
 
-<!--  <div class="comCard card1-nav">
-      <div class="comCard card1-btn">
-        <button class="read">READ</button>
-        <button class="bookmark">BOOKMARK</a></button>
-      </div>
-      <div class="comCard card1-icons">
-        <button class="heart">
-          <i class="far fa-heart"></i>
-        </button>
-        <button class="share"><i class="fas fa-share-alt"></i></button>
-        <button class="opt"><i class="fas fa-ellipsis-v"></i></button>
-      </div>
-    </div> -->
+</html>

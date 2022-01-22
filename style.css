@@ -209,7 +209,7 @@ hr{
 .heart,
 .share,
 .opt {
-  padding: 10px;
+  padding: 0.8rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -613,6 +613,8 @@ hr{
   margin: 4rem auto;
   display: flex;
   padding: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px -5px var(--container-shadow);
 }
 
 .chips-container div {
@@ -656,7 +658,7 @@ input:focus {
 .drawer-container {
   position: relative;
   margin: 2rem auto;
-  width: 15rem;
+  width: 14rem;
   background-color: white;
   box-shadow: 0 5px 20px -5px var(--container-shadow);
 }
@@ -703,20 +705,19 @@ input:focus {
 /* drawer fixed text */
 
  .drawer-fixed-container {
-  max-width: 1050px;
+  max-width: 58rem;
   display: flex;
-  align-items: flex-start;
-  justify-content: baseline;
+  align-items: flex-start;  
   margin: auto;
-  padding: 0;
-  border: 1px solid var(--icon-gray); */
+  margin-bottom: 5rem;  
+  box-shadow: 0 5px 20px -5px var(--container-shadow);
 }
 
 .fixed-title {
   position: sticky;
   top: 0;
   background-color: var(--all-white);
-  width: 180px;
+  width: 10rem;
   padding-left: 1.5rem;
   padding-bottom: 0.5rem;
   margin: 0;
@@ -726,7 +727,7 @@ input:focus {
   position: relative;
   margin-bottom: 0;
   height: 23rem;  
-  width: 15rem;
+  width: 14.5rem;
   overflow-y: scroll;
   margin: 0;
 }
@@ -745,7 +746,7 @@ input:focus {
 .fixed-text-area {
   overflow-y: scroll;
   background-color: var(--all-white);
-  width: 51rem;
+  width: 50rem;
   height: 23rem;
   margin: 0;
 } 
@@ -770,7 +771,7 @@ input:focus {
   justify-content: flex-start;
   max-width: 450px;
   height: 22rem;
-  overflow: scroll;
+  overflow-y: scroll;
   margin: 3rem auto;
   background-color: var(--all-white);
 }
@@ -812,7 +813,7 @@ input:focus {
 
 .hamburger:hover {
   border-radius: 50%;
-  background-color: var(--header-hamburger-hover);
+  background-color: var(--icon-hover);
 }
 
 .download,
@@ -844,7 +845,7 @@ input:focus {
   justify-content: flex-start;
   max-width: 450px;
   height: 22rem;
-  overflow: scroll;
+  overflow-y: scroll;
   margin: 3rem auto;
   background-color: var(--all-white);
 }
@@ -881,7 +882,7 @@ input:focus {
 .header3-with-text {
   max-width: 450px;
   height: 22rem;
-  overflow: scroll;
+  overflow-y: scroll;
   background-color: var(--all-white);
   margin: 3rem auto 5rem;
 }
@@ -1185,39 +1186,73 @@ form label {
 .tab-container {
   display: flex;
   flex-direction: column;
-  margin: 3rem auto;
+  margin: 2rem auto;
   border-radius: 10px;
   background-color: var(--all-white);
   width: 16rem;
   height: 27rem;
   align-items: center;
   justify-content: flex-start;
+  box-shadow: 0 5px 20px -5px var(--container-shadow);
+  overflow: hidden;
 }
 
 .tab-nav-menu {
   display: flex;
-  font-size: 0.8rem;
-  flex-basis: 2;
+  font-size: 0.9rem;
+  width: 100%;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  padding-top: 0.5rem;
+  background-color: var(--primary-color);
+  color: var(--text-white);
 }
 
-.tab-nav-menu button {
-  padding: 0.6rem;
-  margin: 0.5rem;
+.tab-title{
+  width: 5.5rem;
+  margin: auto 0.8rem;
+  font-size:0.7rem ;
+}
+
+.tab-main-icons {
+  display: flex;
+  right: 0;
+  align-self: flex-end;
+  align-items: center;
+  justify-content: center;
+}
+
+.tab{
+  padding: 0.7rem;
+  color: var(--text-white);
+}
+
+.tab:hover{
+  border-radius: 50%;
+  background-color: var(--icon-hover);
+}
+
+.tab:last-child{
+  padding: 0.6rem 0.8rem;
 }
 
 .tab-menu {
   display: flex;
   align-self: center;
   justify-content: space-around;
+  background-color: var(--primary-color);
+  color: var(--text-white);
 }
 
 .tab-menu button {
   font-size: 1.2rem;
   margin: auto;
   text-align: center;
-  color: var(--icon-gray);
+  color: var(--all-white);
+}
+
+.tab-menu button:hover{
+  background-color: var(--icon-hover);
 }
 
 .tab-menu h2 {
@@ -1234,8 +1269,4 @@ form label {
 
 .tab-icon {
   padding: 10px 15px;
-}
-
-.tab-icon:hover {
-  background-color: var(--icon-hover);
 }
