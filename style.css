@@ -5,10 +5,10 @@
 }
 
 :root {
-  --primary-color: #6201ee;
+  --primary-color: hsl(246, 55%, 59%);
   --primary-text-color: #9980bb;
   --secondary-color: #d6cae9;
-  --backgound: #f8f2ff;
+  --backgound: #ffffff;
   --text-white: white;
   --text-black: black;
   --all-white: white;
@@ -62,17 +62,9 @@ nav {
   justify-content: space-around;
 }
 
-@media screen and (max-width: 700px) {
-  nav {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    align-items: center;
-    justify-content: space-around;
-  }
-}
-
 .nav-btn {
-  font-size: 1rem;
+  font-size: 0.8rem;
+  font-weight: 300;
   width: 100px;
   padding: 6px 15px;
   border: none;
@@ -80,8 +72,7 @@ nav {
   color: var(--text-white);
   cursor: pointer;
   margin: 0.5rem;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px var(--container-shadow);
+  border-radius: 4px;
 }
 
 nav a {
@@ -97,6 +88,26 @@ hr {
   margin: auto;
   height: 1px;
   border: 1px solid var(--hr-line);
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .header-section {
+    padding-bottom: 0.3rem;
+    background-color: var(--backgound);
+    border-radius: 0 0 10px 10px;
+  }
+
+  .nav-btn {
+    margin: 0.3rem;
+  }
+
 }
 
 /* All Cards */
@@ -118,9 +129,9 @@ hr {
 }
 
 .type-btn {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 0.5rem 0.8rem;
   margin: 0.3rem;
   background-color: var(--primary-color);
@@ -152,6 +163,7 @@ hr {
 .card1-body:hover {
   filter: brightness(95%);
   background-color: rgba(102, 102, 102, 0.1);
+  border-radius: 10px 10px 0 0;
 }
 
 .card1-img {
@@ -261,6 +273,7 @@ hr {
 .card2-body:hover {
   filter: brightness(95%);
   background-color: rgba(102, 102, 102, 0.1);
+  border-radius: 10px 10px 0 0;
 }
 
 .card2-img {
@@ -337,6 +350,7 @@ hr {
 .card3-body:hover {
   filter: brightness(95%);
   background-color: rgba(102, 102, 102, 0.1);
+  border-radius: 10px 10px 0 0;
 }
 
 .card3-img {
@@ -414,6 +428,7 @@ hr {
 .card4-body:hover {
   filter: brightness(95%);
   background-color: rgba(102, 102, 102, 0.1);
+  border-radius: 10px 10px 0 0;
 }
 
 .card4-img {
@@ -480,6 +495,7 @@ hr {
 .card5-body:hover {
   filter: brightness(95%);
   background-color: rgba(102, 102, 102, 0.1);
+  border-radius: 10px 10px 0 0;
 }
 
 .card5-img {
@@ -557,6 +573,7 @@ hr {
 .card6-body:hover {
   filter: brightness(95%);
   background-color: rgba(102, 102, 102, 0.1);
+  border-radius: 10px 10px 0 0;
 }
 
 .card6-img {
@@ -1354,7 +1371,7 @@ form label {
 
 .explore-card-detail {
   font-size: 0.5rem;
-  padding: 0.2rem 0.5rem;  
+  padding: 0.2rem 0.5rem;
 }
 
 .flight-status,
@@ -1382,12 +1399,12 @@ form label {
   margin: auto;
 }
 
-.tab-active{
-  background-color: rgba(0, 0, 0, 0.185);
-  border-radius: 10px 10px 0 0;  
-} 
+.tab-active {
+  background-color: rgba(75, 75, 75, 0.185);
+  border-radius: 10px 10px 0 0;
+}
 
-.tab-flight{
+.tab-flight {
   margin: 3rem auto;
   font-size: 0.6rem;
 }
