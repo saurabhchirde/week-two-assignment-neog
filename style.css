@@ -787,7 +787,7 @@ input:focus {
   align-content: center;
   justify-content: center;
   margin: auto;
-  flex-wrap: wrap;
+  flex-wrap: wrap;  
 }
 
 .header1-with-text {
@@ -801,6 +801,7 @@ input:focus {
   overflow-y: scroll;
   margin: 3rem auto;
   background-color: var(--all-white);
+  box-shadow: 0 5px 20px -5px var(--container-shadow);
 }
 
 .header1-with-text p {
@@ -875,6 +876,7 @@ input:focus {
   overflow-y: scroll;
   margin: 3rem auto;
   background-color: var(--all-white);
+  box-shadow: 0 5px 20px -5px var(--container-shadow);
 }
 
 .header2-with-text p {
@@ -912,6 +914,7 @@ input:focus {
   overflow-y: scroll;
   background-color: var(--all-white);
   margin: 3rem auto 5rem;
+  box-shadow: 0 5px 20px -5px var(--container-shadow);
 }
 
 .header3-with-text p {
@@ -1038,6 +1041,7 @@ input:focus {
   margin: 5rem auto;
   padding: 2rem;
   background-color: var(--text-white);
+  box-shadow: 0 5px 20px -5px var(--container-shadow);
 }
 
 .badge-container div {
